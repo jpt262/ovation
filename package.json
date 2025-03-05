@@ -1,0 +1,56 @@
+{
+  "name": "ovation",
+  "version": "1.0.0",
+  "description": "A lightweight, vanilla JavaScript module for clap-activated controls",
+  "main": "dist/ovation.js",
+  "module": "dist/ovation.esm.js",
+  "types": "dist/ovation.d.ts",
+  "unpkg": "dist/ovation.min.js",
+  "files": [
+    "dist",
+    "LICENSE",
+    "README.md"
+  ],
+  "scripts": {
+    "build": "rollup -c",
+    "dev": "rollup -c -w",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "test:coverage": "jest --coverage",
+    "lint": "eslint src",
+    "prepublishOnly": "npm run lint && npm run test && npm run build"
+  },
+  "keywords": [
+    "clap",
+    "audio",
+    "detection",
+    "switch",
+    "toggle",
+    "web-audio",
+    "microphone",
+    "sound",
+    "control"
+  ],
+  "author": "",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yourusername/ovation.git"
+  },
+  "bugs": {
+    "url": "https://github.com/yourusername/ovation/issues"
+  },
+  "homepage": "https://github.com/yourusername/ovation#readme",
+  "devDependencies": {
+    "@babel/core": "^7.22.5",
+    "@babel/preset-env": "^7.22.5",
+    "@rollup/plugin-babel": "^6.0.3",
+    "@rollup/plugin-node-resolve": "^15.1.0",
+    "@rollup/plugin-terser": "^0.4.3",
+    "babel-jest": "^29.5.0",
+    "eslint": "^8.43.0",
+    "jest": "^29.5.0",
+    "jest-environment-jsdom": "^29.5.0",
+    "rollup": "^3.25.1"
+  }
+} 
